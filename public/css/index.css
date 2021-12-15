@@ -1,0 +1,600 @@
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    background-image: url(../images/bg-ricepaper_v3.png);
+    background-size: 10%;
+    /* margin: 0; */
+    
+}
+
+.container {
+    /* width : 1140px; */
+    /* margin: 0; */
+}
+
+header>.container {
+    display  : flex;
+    flex-wrap: wrap;
+    position : relative;
+}
+
+
+.logo {
+    position           : absolute;
+    width              : 110px;
+    height             : 100px;
+    background-image   : url(../images/logo.png);
+    background-size    : 90%;
+    background-repeat  : no-repeat;
+    background-position: center center;
+    left               : 50%;
+    margin-left        : -60px;
+}
+
+
+.logo a{
+    display        : block;
+    text-align     : center;
+    color          : rgb(16, 58, 20);
+    text-decoration: none;
+    line-height    : 100px;
+    font-size: 2em;
+
+}
+
+
+    .menu-icon {
+    margin-left     : auto;
+    width           : 20%;
+    height          : 100px;
+    /* background-color: rgb(255, 255, 255); */
+    
+}
+
+.menu-icon>a {
+    display        : block;
+    text-align     : center;
+    color          : rgb(16, 58, 20);
+    text-decoration: none;
+    line-height    : 100px;
+    font-size: 2em;
+ 
+}
+
+
+nav {
+    width: 100%;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+    
+}
+
+nav>ul>li {
+    line-height     : 40px;
+    background-color: rgb(36, 109, 48);
+    text-align      : center;
+    display: none;
+    position: relative;
+  
+}
+
+
+/* 偽類選取器 */
+nav a::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: green;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.4s all;
+    color: rgb(36, 109, 48);
+  }
+  
+  
+nav a:hover::after {
+    width: 100%;
+   
+  }
+/* .a_active{
+    color: rgb(36, 109, 48);
+    border-bottom:2px solid rgb(36, 109, 48);
+} */
+nav>ul>li>a {
+    border-bottom  : 1px dotted white;
+    display        : block;
+    text-decoration: none;
+    color          : white;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 1.5em;}
+   
+   
+    nav>ul>li>a:hover{
+        
+        color          : rgb(74, 94, 76);
+        
+        font-size: 1.5em;}
+/* /////////////////  .banner////////////////// */
+
+.banner.container {
+    background-color: antiquewhite;
+    width           : 100%;
+    max-width       : 1140px;
+    margin          : auto;
+    position        : relative;
+    /* margin-top: -162px; */
+  
+}
+
+
+.slide_wrapper {
+    /* background-color: aqua; */
+    overflow        : hidden;
+    position        : relative; 
+    
+}
+
+
+.slidecontent {
+
+
+    width      : calc(1140px * 6);
+    margin-left: -1140px;
+
+}
+
+/* //第三層 要併排的子項目 */
+.slide {
+    width      : 1140px;
+    line-height: 300px;
+    text-align : center;
+    float      : left;
+
+}
+
+#prev,
+#next {
+    width           : 10%;
+    height          : 100%;
+    position        : absolute;
+    top             : 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    color           : blanchedalmond;
+    border          : none;
+
+    cursor: pointer;
+}
+
+#prev {
+    left: 0px;
+}
+
+#next {
+    right: 0px;
+}
+/* ///////////////產品放大'//////////// */
+.product_img {
+
+    width : 100%;
+  
+    
+
+}
+
+.top-product {
+    width      : 80%;
+    height  : 100%;
+    overflow   : hidden;
+
+}
+
+
+/*/////////////////////跳出動畫//////////////////// */
+
+
+/* .home_img {
+    background-image   : url(/public/images/home_img.png);
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-position: center;
+    width              : 50%;
+    height             : 250px;
+    position           : relative;
+top               : 40%;
+
+    transition: all 3S;
+} */
+.home_img {
+    background-image   :url(../images/home_img.png) ;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    padding-bottom: 131%;
+    
+    /* width              : 50%; */
+    /* height             : 250px; */
+    /* position           : relative; */
+    /* top               : 40%; */
+
+}
+.img_active {
+    /* display: block; */
+    /* transform: rotate(360deg); */
+    /* transform: scale(1.1);
+    opacity  : 1;
+    z-index  : 5;
+    position : relative;
+    left     : 50%; */
+
+}
+
+.home_text {
+    width : 50%;
+    height: 300px;
+}
+
+.home_text p {
+    display: block;
+    color     : rgb(13, 68, 34);
+}
+
+/*////////////////////// MAP///////////////////// */
+
+.img_text h3 {
+    width           : 100%;
+    background-color: rgba(0, 0, 0, 0.205);
+
+
+    color  : blanchedalmond;
+    padding: 3%;
+
+    font-size: 16px;
+}
+
+.map_img {
+    height               : 100%;
+    width                : 100%;
+    background-attachment: fixed;
+    background-image     : url(../images/map001.jpg)
+
+}
+
+.map_google {
+    overflow: hidden;
+}
+
+/* ///////////////////小卡////////////////////// */
+.card {
+    /* background-color: #faebd7; */
+
+}
+.card-title{
+    font-weight:900
+}
+/*/////////////////// 頁尾////////////////////// */
+
+footer {  height          : 160px;
+    width              : 100%;
+    padding-top        : 20px;
+    background-color   : rgb(24, 75, 24);}
+
+footer li {
+    list-style-type: none;
+    float          : left;
+    width          : 25%;
+    text-align     : center;
+}
+
+footer a {
+    text-decoration: none;
+
+   
+}
+#ftbr {
+    /* overflow        : hidden; */
+    width           : 100%;
+    color           :cornsilk;
+}
+
+#ftbr div {
+    float     : left;
+    width     : 25%;
+    text-align: center;
+}
+
+#ftbr a {
+    display        : block;
+    color          :cornsilk;
+    text-decoration: none;
+    font-size      : 0.8rem;
+}
+
+.gofbig P{
+    margin: 0;
+}
+.gofbigicon{
+margin-left: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.gofbig a {padding: 0.2rem;
+    font-size: 3rem;
+    /* text-decoration: none; */
+    
+}
+
+#ftend {
+    padding-top: 10px;
+    background-color: rgb(24, 75, 24);
+    color: cornsilk;
+    padding: 0;
+    margin: 0;
+  text-align: center;
+}
+#ftend p{
+    margin: 0;
+}
+/* ///////////////////輪播////////////////////// */
+
+.slide_content div {
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 229px;
+    height           : 300px;
+}
+
+.slide-content{
+    margin-top: 4%;
+    
+}
+.title {
+    
+    color     : rgb(13, 68, 34);
+    text-align: center;
+    height    : 80px;
+    font-size : 80%;
+    padding   : 4%;
+    
+}
+
+h2 {
+    /* text-decoration-line: underline;   */
+    /* text-decoration: underline;  */
+    margin: 0;
+    color:rgb(24, 75, 24);
+}
+.gotop a{
+    color:rgb(24, 75, 24);  
+}
+.gotop a:hover{
+        
+    color          : rgb(74, 94, 76);}
+
+    .gotop{
+        /* position: fixed; */
+       
+
+      right: 50px;
+        bottom: 50px;
+        color: rgba(6, 53, 25, 0.979);
+        font-size: 4em;
+        display: none;
+        transition: all 3s;
+    }
+/* /////////////////////////////////////////////////////////// */
+@media screen and (min-width: 768px) {
+
+    .logo {
+        z-index: 999;
+    }
+
+    header {
+        /* background: lightgray; */
+        margin-top: 20px;
+       
+    }
+   
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        margin-top: 30px;
+    }
+
+    nav>ul {
+        display        : flex;
+        justify-content: center;
+    }
+
+    nav>ul>li {
+        width     : 15%;
+        background: transparent;
+        display: block;
+    }
+
+    nav>ul>li>a {
+        color: green;
+    }
+
+    nav>ul>li:nth-child(2) {
+        margin-right: 140px;
+    }
+
+    /*///////////////// 放大產品照片 /////////////////*/
+    /* .top-product .container {
+        background-color: antiquewhite;
+        width           : 1140px;
+        margin          : auto;
+        position        : relative; */
+
+    /* } */
+    /* .top-product.container { */
+        /* background-color: antiquewhite; */
+        /* width           : 100%; */
+        /* max-width       : 1140px; */
+        /* height: 410px; */
+        /* margin          : auto; */
+        
+        /* position        : relative; */
+ 
+    /* } */
+
+
+    .top-product {
+        width   : 100%;
+        height  : 800px;
+        overflow: hidden;
+
+
+
+    }
+
+    /* .carousol{
+        width: 100%;
+        height: 410px;
+      
+      } */
+    .product {
+        /* margin-top: 30px; */
+        width           : 2000px;
+        position     : relative;
+       
+        /* overflow: hidden; */
+    }
+
+    .product_img {
+    
+        /* overflow           : hidden; */
+    
+    /* //////////////////////////////////////////////////// */
+        float              : left;
+        width              : 285px;
+        /* height             : 100%; */
+        height: 600px;
+        transition         : 1s all;
+    }
+
+    .product_img.active {
+        width: 600px;
+        /* height: 500px; */
+        /* background-position:100% 150%; */
+    }
+
+    .product_img.other {
+        width: 200px;
+        /* background-position:100% 150%; */
+    }
+ 
+    /* ///////////////跳出動畫////////////////// */
+   
+
+    /* .img_active {
+        transform : rotate(360deg);
+        transform : scale(3);
+        z-index   : 5;
+        position  : relative;
+        left      : 45%;
+        bottom    : 120px;
+    } */
+    .home_img_content{
+        padding-bottom: 131%;
+        position: relative;
+        /* overflow: hidden; */
+        width: 100%;
+    }
+    .home_img{
+        width: 100%;
+        padding-bottom: 161%;
+        position: absolute;
+        bottom:-90%;
+        z-index: 999;
+        transition: all 2s;
+    }
+    .img_active {
+        left:0;
+        bottom:-20%;
+    }
+    .home_text {
+        width : 50%;
+        height: 300px;
+       
+    }
+
+
+    .home_text p {
+        font-size : 1.5em;
+        display   : block;
+        text-align: center;
+         color: rgb(3, 41, 20);
+    padding: 0;
+    margin: 0;
+        }
+
+
+    /*/////////////////////// map//////////////////////*/
+    .map_img {
+        height               : 450px;
+        /* width                : 1140px; */
+        background-attachment: fixed;
+        background-image     : url(../images/map001.jpg);
+
+    }
+
+    .img_text {
+
+        position: relative;
+    }
+
+    .img_text h3 {
+        font-size       : 25px;
+        width           : 1140px;
+        background-color: rgba(0, 0, 0, 0.205);
+        /* border-radius: 10% 10% 10% 10%; */
+
+        color         : blanchedalmond;
+        padding       : 3%;
+        /* margin-left: 50%; */
+        /* margin-top : 50%; */
+        position      : absolute;
+        top           : 120px;
+        right         : 0px;
+    }
+
+    .map_google {
+        display: none;
+        width  : 100%;
+    }
+
+    /* /////////////////////小卡///////////////////// */
+    #new>.row {
+        margin          : auto;
+        /* background-color: bisque; */
+        width           : 1140px;
+    }
+
+    .gotop{
+        position: fixed;
+       
+
+      right: 50px;
+        bottom: 50px;
+        color: rgba(6, 53, 25, 0.979);
+        font-size: 4em;
+        display: none;
+        transition: all 3s;
+    }
+    .gotop_active{
+
+        transform: rotate(365deg);
+    }
+}
+
+
+/* 768end */
