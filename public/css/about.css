@@ -1,13 +1,15 @@
 .container {
-    width    : 80%;
+    width    : 100%;
     max-width: 1140px;
     margin   : auto;
 }
-.dv{
-     display        : flex;
- flex-direction: column;
- align-content: center;
+
+.dv {
+    display       : flex;
+    flex-direction: column;
+    align-content : center;
 }
+
 .row {
     /* display        : flex;
     justify-content: space-around; */
@@ -53,7 +55,7 @@ img {
     text-align: center;
     padding   : 1%;
     color     : rgba(255, 239, 213, 0.637);
-    font-size: large;
+    font-size : large;
 }
 
 /* ////////////YOUTUBE/////////////// */
@@ -119,7 +121,7 @@ img {
     }
 
     .gotop {
-        position: fixed;
+        position  : fixed;
         right     : 50px;
         bottom    : 50px;
         color     : rgba(6, 53, 25, 0.979);
