@@ -124,7 +124,7 @@ nav>ul>li>a {
 .banner.container {
     background-color: antiquewhite;
     width           : 100%;
-    max-width       : 1140px;
+    max-width       : 1440px;
     margin          : auto;
     position        : relative;
     /* margin-top: -162px; */
@@ -187,7 +187,7 @@ nav>ul>li>a {
 }
 
 .top-product {
-    width      : 80%;
+    width      : 100%;
     height  : 100%;
     overflow   : hidden;
 
@@ -463,7 +463,7 @@ h2 {
       } */
     .product {
         /* margin-top: 30px; */
-        width           : 2000px;
+        width           : 1440px;
         position     : relative;
        
         /* overflow: hidden; */
