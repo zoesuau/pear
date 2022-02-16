@@ -1,31 +1,12 @@
 
-// $(".dv img").hover(function () {
-//     $(this).addClass(".active_ab1")
-//     $(this).siblings().addClass(".active_ab1")
-
-// })
 
 
 $(".menu-icon").on("click", function () {
     console.log("hiiiiiiii")
     $(this).siblings().find("li").toggle()
 })
-// let is_show = false
-// $(".menu-icon").on("click",function(){
-//     if(is_show == false){
-//         $("nav").slideToggle()
-//         is_show = true
-//     }else{
-//         $("nav").slideToggle()
-//         is_show = false
-//     }
-// })
 
-// $("header li").on("click", function () {
-//     console.log("000")
-//     $("li").hide()
 
-// })
 $(window).mousemove(function (e) {
         $(".circle").css({ top: e.pageY, left: e.pageX }); 
       }); 
@@ -141,16 +122,8 @@ $(window).scroll(function () {
     }
     
 })
-//nav  11/14
 
-// $("nav a").hover(function () {
-//     $(this).addClass(".a_active")
-//     $(this).siblings().addClass(".a_active")
-// console.log("nav")
-    // }, function () {
-    //     $(this).show()
-    //     $(this).siblings().hide()
-// })
+
 
 
 // MAP
@@ -159,22 +132,6 @@ $(".map_img").hover(function () {
 })
 
 
-// $(window).resize(function(){
-
-// console.log("視窗寬度",$(window).width());
-// console.log("視窗寬度");
-
-
-// })
-// if (current_slide_offset != 768) {
-//     $(".home_ing").show()
-// } else {
-//     //callback
-
-//     })
-
-
-// }
 ////////////////////////// 頁底自動輪播//////////////////////////////
 $('.slide-content').slick({
     infinite: true,

@@ -1,61 +1,20 @@
-.container {
-    width    : 100%;
-    max-width: 1140px;
-    margin   : auto;
-}
-
-.dv {
-    display       : flex;
-    flex-direction: column;
-    align-content : center;
-}
-
-.row {
-    /* display        : flex;
-    justify-content: space-around; */
-}
-
-.col-6 {
-    width: 48%;
-}
-
-.wow {
-    padding-top      : 5%;
-    /* padding-bottom: 71.5%; */
-}
-
-img {
-    display  : block;
-    max-width: 100%;
-    height   : 100%;
-
-}
-
-/* //////////////////aboutbanner/////////////////// */
-
-.banner_img {
-    /* background-image: url(/public/images/a001.png); */
-    background-color   : rgb(16, 97, 40);
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    padding-bottom     : 1%;
-    margin-top         : 3%;
-    width              : 100%;
-
-}
-
-
-/* .active_ab1 {
-    background-image : url();
-    background-repeat: 50%;
-} */
-
-.aboutimg_text {
+.text p{
     text-align: center;
-    padding   : 1%;
-    color     : rgba(255, 239, 213, 0.637);
-    font-size : large;
+    display: block;
+ padding: 5% 0;  
+margin: 2% 0;
+
+}
+
+.license_img_box{
+    background-image: url(../images/bg-001.png);
+border-radius: 50px;
+margin: 0 2%;
+}
+.license_img_box img{
+padding: 5% 2%;
+border-radius: 50px;
+
 }
 
 /* ////////////YOUTUBE/////////////// */
@@ -64,33 +23,23 @@ img {
     height        : 0;
     padding-bottom: 56.25%;
     overflow      : hidden
+    
 }
 
 .youtube-rwd iframe,
 .youtube-rwd object,
 .youtube-rwd embed {
     position: absolute;
-    top     : 0;
+    top     : 13%;
     left    : 0;
     width   : 100%;
-    height  : 100%
+    height  : 100%;
+    border-radius: 30px;
 }
 
 /* /////////////dv///////////////////////// */
 
-.dv h4 {
-    color           : rgba(255, 239, 213, 0.637);
-    background-color: rgb(16, 97, 40);
-    font-size       : 1.5em;
-    line-height     : 1em;
 
-}
-
-
-.dv p {
-    font-size  : 1em;
-    line-height: 1em;
-}
 
 .gotop a {
     color: rgb(24, 75, 24);
@@ -103,23 +52,7 @@ img {
 
 @media screen and (min-width:768px) {
 
-    .wow {
-        margin-top: 18%;
-    }
-
-    .dv h4 {
-        color           : rgba(255, 239, 213, 0.637);
-        background-color: rgb(16, 97, 40);
-        font-size       : 2em;
-        line-height     : 2em;
-
-    }
-
-    .dv p {
-        font-size  : 1.5em;
-        line-height: 1.5em;
-    }
-
+   
     .gotop {
         position  : fixed;
         right     : 50px;
