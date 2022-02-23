@@ -108,28 +108,39 @@ $(window).scroll(function () {
     console.log($(window).scrollTop())
 })
 
+
+
 $(window).scroll(function () {
     if ($(window).scrollTop() > 600) {
        
-        $(".gotop").show()
-        $(".gotop").addClass(".gotop_active")
+        $(".gotop1").stop().slideDown()
+        $(".gotop1").addClass("gotop_active")
 
         
     } else {
         // ($(window).scrollTop() < 600) {
             
-            $(".gotop").hide()
+            $(".gotop1").stop().slideUp()
+    }
+    
+})
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 600) {
+       
+        $(".gotop").stop().slideDown()
+        $(".gotop").addClass("gotop_active")
+
+        
+    } else {
+        // ($(window).scrollTop() < 600) {
+            
+            $(".gotop").stop().slideUp()
     }
     
 })
 
 
-
-
-// MAP
-$(".map_img").hover(function () {
-    $(this).siblings().show()
-})
 
 
 ////////////////////////// 頁底自動輪播//////////////////////////////

@@ -34,35 +34,37 @@
     border-radius: 30px;
 }
 
-/* /////////////dv///////////////////////// */
-.about {
-    padding: 5%;
-     position: relative;
-}
+/* /////////////內文///////////////////////// */
 
-
-
-p{
+.about p{
+    font-size: 1.5rem;
     color: seagreen;
 }
+.about {
+    padding: 5%;
+  width: 100%;
+}
+
+
+
+
 
 
 .img01{
-    position: absolute;
-    top: 1%;
+    display: none;
    
 }
 
 
 
 .img04 {
-    position: absolute;
-bottom: 4%;    
+ display: none;    
 }
 
 
+
 .gotop a {
-    color: rgb(24, 75, 24);
+    color: seagreen;
 }
 
 .gotop a:hover {
@@ -70,22 +72,61 @@ bottom: 4%;
     color: rgb(74, 94, 76);
 }
 
+
+
 @media screen and (min-width:768px) {
 
 
-    .gotop {
+    .about p{
+        color: seagreen;
+    }
+    .about {
+  
+        padding: 5%;
+         position: relative;
+    }
+    
+    
+    
+    
+    
+    
+    .img01{display: block;
+        position: absolute;
+        
+       left: -2%;
+    }
+    
+    
+    
+    .img04 {display: block;
+        position: absolute;
+    bottom: 4%;  
+    right: -2%;  
+    }
+
+    .gotop1 a{
         position: fixed;
+
+
         right: 50px;
-        bottom: 50px;
-        color: rgba(6, 53, 25, 0.979);
+        bottom: 0px;
+        color: seagreen;
         font-size: 4em;
-        /* display: none; */
-        transition: all 3s;
+        display: none;
+        display: block;
+        transition: all 0.5s;
     }
 
     .gotop_active {
+        transform : rotate(360deg);
+       position: fixed;
 
-        transform: rotate(365deg);
-    }
 
-}
+        right: 50px;
+        bottom: 50px;
+      
+    } 
+
+    
+}  

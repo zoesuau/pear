@@ -338,7 +338,7 @@ h2 {
 }
 
 .gotop a {
-    color: rgb(24, 75, 24);
+    color: rgb(40, 90, 40);
 }
 
 .gotop a:hover {
@@ -352,12 +352,21 @@ h2 {
 
     right: 50px;
     bottom: 50px;
-    color: rgba(6, 53, 25, 0.979);
+   
     font-size: 4em;
     display: none;
-    transition: all 3s;
+    transition: all .3s;
+    transform: translate(30px);
+    transition: .6s;
+
 }
 
+
+
+.gotop_active {
+   
+   transform: rotate(360deg) ;
+}
 
 
 
@@ -386,7 +395,7 @@ h2 {
 
     nav>ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     nav>ul>li {
@@ -454,7 +463,7 @@ h2 {
     .product_img {
 
         float: left;
-        width: 250px;
+        width: 220px;
 
         height: 600px;
         transition: 1s all;
@@ -482,13 +491,13 @@ h2 {
     }
 
     .product_img.active {
-        width: 600px;
+        width: 700px;
         /* height: 500px; */
         /* background-position:100% 150%; */
     }
 
     .product_img.other {
-        width: 200px;
+        width: 100px;
         /* background-position:100% 150%; */
     }
 
@@ -555,16 +564,21 @@ h2 {
 
 
         right: 50px;
-        bottom: 50px;
-        color: rgba(6, 53, 25, 0.979);
+        bottom: 0px;
+        color: seagreen;
         font-size: 4em;
         display: none;
-        transition: all 3s;
+        transition: all 0.5s;
     }
 
     .gotop_active {
+        transform : rotate(360deg);
+       position: fixed;
 
-        transform: rotate(365deg);
+
+        right: 50px;
+        bottom: 50px;
+      
     }
 }
 

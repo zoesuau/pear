@@ -2,9 +2,9 @@
 
 
 
-$(".social_box a").hover( function(){
+$(".social_box div").hover( function(){
           
-    if( $(this).hover())
+    if( $(this).hover() )
     
     { $(this).find("i").toggle(400)
  
@@ -12,3 +12,4 @@ $(".social_box a").hover( function(){
 
     }
   })
+
