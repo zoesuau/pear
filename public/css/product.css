@@ -1,0 +1,67 @@
+
+
+
+
+#main>img,#main2>img,#main3>img,#main4>img,#main5>img{
+    width: 100%;
+    margin: 0px;
+    padding: auto;
+
+}
+
+#thumbnails,#thumbnails2{
+    /* 1.文字大小設定0  html換行時會產生空白鍵 把它清掉 */
+    font-size: 0;
+    /* 2.改為塊級元素 下層有float浮動 父層要補 overflow: hidden; */
+    /* overflow: hidden; */
+    /* 3.display: flex; */
+    display: flex;
+    margin: 1%;
+}
+#thumbnails2>img,#thumbnails3>img,#thumbnails4>img,#thumbnails5>img,#thumbnails>img
+{
+    /* 2.改為塊級元素 下層有float浮動 父層要補 overflow: hidden; */
+    /* display: block;
+    float: left; */
+    width: 20%;
+    
+}
+
+.active1{
+    border: 2px solid rgb(166, 168, 167);
+    box-sizing: border-box;
+    
+}
+.main_text h1{
+padding: 3%;
+    border-bottom: 2px seagreen solid;
+}
+
+.main_box{
+    
+    border-top: 50px seagreen solid;
+   border-radius: 50px;
+    
+  
+   margin: 3% 0;
+   box-shadow:3px 3px 6px 6px #cccccc
+}
+.main_box a,h3{
+    text-decoration: none;
+    color: seagreen;
+}
+
+.gotop1 a{
+    position: fixed;
+     right: 50px;
+     bottom: 50px;
+     color: seagreen;
+     font-size: 4em;
+   
+     transition: all 3s;
+ }
+
+ .gotop_active {
+
+     transform: rotate(365deg);
+ }
