@@ -347,10 +347,10 @@ h2 {
 }
 
 .gotop {
-    /* position: fixed; */
+    position: fixed;
 
 
-    right: 50px;
+    right: 0px;
     bottom: 50px;
    
     font-size: 4em;
