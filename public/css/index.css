@@ -38,12 +38,12 @@ header>.container {
     position: absolute;
     width: 110px;
     height: 100px;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo1.png);
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center center;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -55px;
 }
 
 
@@ -207,7 +207,7 @@ nav>ul>li>a:hover {
 .img_text h3 {
     margin: 8% auto;
     width: 100%;
-    background-color: rgba(104, 134, 116, 0.342);
+    /* background-color: rgba(104, 134, 116, 0.242); */
     line-height: 30px;
 
     color: rgb(241, 248, 245);
@@ -226,7 +226,7 @@ nav>ul>li>a:hover {
     height: 100%;
     width: 100%;
     background-attachment: fixed;
-    background-image: url(../images/map001.jpg)
+    background-image: url(../images/map001.png)
 }
 
 
